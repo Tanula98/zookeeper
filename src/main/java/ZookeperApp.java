@@ -16,6 +16,10 @@ public class ZookeperApp {
 
     public static void main(String[] args) throws IOException, KeeperException, InterruptedException
     {
+
+        if (args.length < 1) {
+            
+        }
         int serverPort = Integer.parseInt(args[0]);
 
         
