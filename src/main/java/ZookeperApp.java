@@ -21,8 +21,10 @@ public class ZookeperApp {
             System.err.println("gg");
             return;
         }
-        
+
         int serverPort = Integer.parseInt(args[0]);
+
+
 
         
     }
