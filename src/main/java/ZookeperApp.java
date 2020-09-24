@@ -19,6 +19,7 @@ public class ZookeperApp {
 
         if (args.length < 1) {
             
+            return;
         }
         int serverPort = Integer.parseInt(args[0]);
 
