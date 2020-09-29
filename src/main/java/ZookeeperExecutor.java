@@ -22,5 +22,5 @@ public class ZookeeperExecutor implements Watcher {
             } catch (KeeperException | InterruptedException e){
                 e.printStackTrace();
 
-            } 
+            }
     }
