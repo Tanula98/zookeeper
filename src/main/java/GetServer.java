@@ -5,6 +5,7 @@ import akka.http.javadsl.server.Route;
 import akka.http.javadsl.model.HttpRequest;
 import akka.http.javadsl.model.HttpResponse;
 
+import java.util.concurrent.CompletionStage;
 
 
 public class GetServer {
@@ -19,6 +20,8 @@ public class GetServer {
         return cacheActor;
     }
 
-    
+    private CompletionStage<HttpResponse> fetch(Http http, String url) {
+        return http.singleRequest(HttpRequest.create(url));
+    }
 
 }
