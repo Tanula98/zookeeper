@@ -1,8 +1,5 @@
 import akka.actor.ActorRef;
-import org.apache.zookeeper.KeeperException;
-import org.apache.zookeeper.WatchedEvent;
-import org.apache.zookeeper.Watcher;
-import org.apache.zookeeper.ZooKeeper;
+import org.apache.zookeeper.*;
 
 import java.io.IOException;
 import java.util.List;
@@ -14,6 +11,8 @@ public class ZookeeperExecutor implements Watcher {
         zoo = new ZooKeeper("127.0.0.1:2181", 5000, this);
 
 
+        
+
         //собираем адрес текущего сервера
         String serverUrl = "http://" + "localhost" + ":" + serverPort;
 
@@ -21,7 +20,8 @@ public class ZookeeperExecutor implements Watcher {
         zoo.create(
                 "/servers/s",
                 serverUrl.getBytes(),
-
+                ZooDefs.Ids.OPEN_ACL_UNSAFE,
+                CreateMode.EPHEMERAL_SEQUENTIAL
                 );
 
     }
