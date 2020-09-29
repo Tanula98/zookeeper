@@ -1,5 +1,6 @@
 import akka.actor.AbstractActor;
 import akka.actor.Props;
+import akka.japi.pf.ReceiveBuilder;
 
 import java.util.Queue;
 
@@ -15,6 +16,6 @@ public class CacheActor extends AbstractActor {
 
     @Override
     public Receive createReceive() {
-        return Receive. ;
+        return ReceiveBuilder.create();
     }
 }
