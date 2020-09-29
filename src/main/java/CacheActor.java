@@ -1,8 +1,9 @@
+import akka.actor.AbstractActor;
 import akka.actor.Props;
 
 import java.util.Queue;
 
-public class CacheActor {
+public class CacheActor extends AbstractActor {
 
     private Queue<String> serversQueue;
 
@@ -12,4 +13,8 @@ public class CacheActor {
     }
 
 
+    @Override
+    public Receive createReceive() {
+        return null;
+    }
 }
