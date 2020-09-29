@@ -18,7 +18,7 @@ public class ZookeperApp {
     {
 
         if (args.length < 1) {
-            System.err.println("");
+            System.err.println("NOT_ENOUGH_ARGS_ERROR");
             return;
         }
 
