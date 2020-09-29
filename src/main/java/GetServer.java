@@ -6,6 +6,6 @@ public class GetServer {
     private final ActorRef cacheActor;
 
     GetServer(ActorSystem system){
-        cacheActor
+        cacheActor = system.actorOf(CacheActor.props(),);
     }
 }
