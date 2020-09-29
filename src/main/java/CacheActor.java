@@ -2,5 +2,5 @@ import java.util.Queue;
 
 public class CacheActor {
 
-    private Queue<String> queue = 
+    private Queue<String> queue;
 }
