@@ -19,6 +19,8 @@ public class ZookeeperExecutor implements Watcher {
         @Override
     public void process(WatchedEvent watchedEvent) {
             try {
+            } catch (KeeperException | InterruptedException e){
+                e.printStackTrace();
 
+            } 
     }
-}
