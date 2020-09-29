@@ -17,6 +17,6 @@ public class GetServer {
 
     Route createRoute(Http http) {
         return route(
-                get
+                get()
         );
 }
