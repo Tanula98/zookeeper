@@ -20,7 +20,7 @@ public class ZookeeperExecutor implements Watcher {
     @Override
     public void process(WatchedEvent watchedEvent) {
         try {
-            List<String> serversNodes = zoo.
+            List<String> serversNodes = zoo.getChildren()
 
         } catch (KeeperException | InterruptedException e) {
             e.printStackTrace();
