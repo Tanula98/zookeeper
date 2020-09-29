@@ -17,6 +17,9 @@ public class ZookeeperExecutor implements Watcher {
         //собираем адрес текущего сервера
         String serverUrl = "http://" + "localhost" + ":" + serverPort;
 
+        //регистрируемся в зоокипере
+        zoo.create(
+
     }
 
 
