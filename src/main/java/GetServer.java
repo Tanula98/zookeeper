@@ -1,5 +1,9 @@
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
+import akka.http.javadsl.Http;
+import akka.http.javadsl.server.Route;
+
+import static akka.http.javadsl.server.Directives.route;
 
 public class GetServer {
 
@@ -13,5 +17,6 @@ public class GetServer {
         return cacheActor;
     }
 
-    
+    Route createRoute(Http http) {
+        return route(
 }
