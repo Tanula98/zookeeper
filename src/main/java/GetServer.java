@@ -5,5 +5,7 @@ public class GetServer {
 
     private final ActorRef cacheActor;
 
-    GetServer(ActorSystem system)
+    GetServer(ActorSystem system){
+        cacheActor
+    }
 }
