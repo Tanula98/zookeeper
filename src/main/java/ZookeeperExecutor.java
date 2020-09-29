@@ -5,6 +5,7 @@ import org.apache.zookeeper.Watcher;
 import org.apache.zookeeper.ZooKeeper;
 
 import java.io.IOException;
+import java.util.List;
 
 public class ZookeeperExecutor implements Watcher {
     private ZooKeeper zoo;
@@ -19,7 +20,7 @@ public class ZookeeperExecutor implements Watcher {
     @Override
     public void process(WatchedEvent watchedEvent) {
         try {
-            
+            List<String> serversNodes = zoo.
 
         } catch (KeeperException | InterruptedException e) {
             e.printStackTrace();
