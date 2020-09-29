@@ -8,4 +8,10 @@ public class GetServer {
     GetServer(ActorSystem system){
         cacheActor = system.actorOf(CacheActor.props(), "cacheActor");
     }
+
+    public ActorRef getCacheActor() {
+        return cacheActor;
+    }
+
+    
 }
