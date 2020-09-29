@@ -15,7 +15,7 @@ public class ZookeeperExecutor implements Watcher {
 
 
         //собираем адрес текущего сервера
-        String serverUrl = "http://" + "" + ":" + serverPort;
+        String serverUrl = "http://" + "localhost" + ":" + serverPort;
 
     }
 
