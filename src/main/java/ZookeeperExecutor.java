@@ -1,4 +1,6 @@
-public class ZookeeperExecutor {
+import org.apache.zookeeper.Watcher;
+
+public class ZookeeperExecutor implements Watcher {
 
 
 }
