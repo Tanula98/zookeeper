@@ -16,11 +16,12 @@ public class ZookeeperExecutor implements Watcher {
     }
 
 
-        @Override
+    @Override
     public void process(WatchedEvent watchedEvent) {
-            try {
-            } catch (KeeperException | InterruptedException e){
-                e.printStackTrace();
+        try {
+        } catch (KeeperException | InterruptedException e) {
+            e.printStackTrace();
 
-            }
+        }
     }
+}
