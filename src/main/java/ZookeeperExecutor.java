@@ -14,6 +14,9 @@ public class ZookeeperExecutor implements Watcher {
         zoo = new ZooKeeper("127.0.0.1:2181", 5000, this);
 
 
+        //собираем адрес текущего сервера
+        String serverUrl = "http://" + "" + ":" + serverPort;
+
     }
 
 
