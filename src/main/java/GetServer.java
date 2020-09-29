@@ -11,7 +11,7 @@ public class GetServer {
 
     private final ActorRef cacheActor;
 
-    GetServer(ActorSystem system){
+    GetServer(ActorSystem system) {
         cacheActor = system.actorOf(CacheActor.props(), "cacheActor");
     }
 
@@ -19,9 +19,6 @@ public class GetServer {
         return cacheActor;
     }
 
-    Route createRoute(Http http) {
-        return route(
-                get()
-        );
-    }
+    
+
 }
