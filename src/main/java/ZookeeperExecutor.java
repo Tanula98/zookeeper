@@ -19,6 +19,7 @@ public class ZookeeperExecutor implements Watcher {
 
         //регистрируемся в зоокипере
         zoo.create(
+                "/servers/s",
                 
         );
 
