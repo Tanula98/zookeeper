@@ -18,7 +18,7 @@ public class ZookeperApp {
     {
 
         if (args.length < 1) {
-            System.err.println("gg");
+            System.err.println("");
             return;
         }
 
@@ -26,6 +26,6 @@ public class ZookeperApp {
 
 
 
-        
+
     }
 }
